@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .gender {
+            margin-bottom: 10px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+        .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+
+            <label for="re-password">Re-enter Password</label>
+            <input type="password" id="re-password" required>
+
+            <div class="gender">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" rows="4" required></textarea>
+
+            <label for="state">State</label>
+            <input type="text" id="state" required>
+
+            <label for="country">Country</label>
+            <select id="country" required>
+                <option value="" disabled selected>Choose your country</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <!-- Add more countries as needed -->
+            </select>
+
+            <label>Languages known:</label>
+            <label><input type="checkbox"> English</label>
+            <label><input type="checkbox"> Kannada</label>
+            <label><input type="checkbox"> Hindi</label>
+            <label><input type="checkbox"> Telugu</label>
+
+            <label><input type="checkbox" required> Hereby I declare all the given details are true</label>
+
+            <div class="button-container">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        <div class="link">
+            <a href="#">Log in to Ethnus website</a>
+        </div>
+    </div>
+
+</body>
+</html>

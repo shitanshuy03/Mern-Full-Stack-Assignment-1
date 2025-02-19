@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting Lists and Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            border: 1px solid #000;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .nested {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        .links-container {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .links-container a {
+            color: blue;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="links-container">
+        <p>Click any of the following links</p>
+        <a href="#">Opens in New</a> |
+        <a href="#">Opens in Self</a> |
+        <a href="#">Opens in Parent</a> |
+        <a href="#">Opens in Body</a> |
+        <a href="#">Send email</a>
+    </div>
+
+</body>
+</html>
